@@ -1,0 +1,23 @@
+{
+  "name": "guc10.github.io",
+  "version": "1.0.0",
+  "description": "About me page",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass Style/mainStyle.sass Style/mainStyle.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guc10/guc10.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guc10/guc10.github.io/issues"
+  },
+  "homepage": "https://github.com/Guc10/guc10.github.io#readme",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}
