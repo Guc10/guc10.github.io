@@ -11,32 +11,45 @@
 
     <!--style-->
     <link rel="stylesheet" href="Website/Style/mainStyle.css">
-    <link rel="icon" type="image/x-icon" href="Website/Images/Icons/favicon.png" >
+    <link rel="icon" type="image/x-icon" href="Website/Images/Icons/Dark/favicon.png" >
 
     <!--ajax and functionality-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Website/Functionality/index.js"></script>
+    <script src="Website/Functionality/clock.js"></script>
+    <script src="Website/Functionality/anim.js"></script>
 
     <title>About_me</title>
 </head>
 <body>
     <header>
-        <div class="headerContainer">
+        <div class="headerContainer1">
             <div class="titleContainer">
                 <h1>my Portfolio_</h1>
             </div>
         </div>
-        <div class="headerContainer">
+        <div class="headerContainer2">
             <div class="menu">
-                <img src="Website/Images/Icons/menu.png" alt="menu" id="menu">
-                <img src="Website/Images/Icons/lightMode.png" alt="light mode" id="lightMode">
-                <img src="Website/Images/Icons/darkMode.png" alt="dark mode" id="darkMode">
+                <img src="Website/Images/Icons/Dark/menu.png" alt="menu" id="menu">
+                <img src="Website/Images/Icons/Dark/lightMode.png" alt="light mode" id="lightMode">
+                <img src="Website/Images/Icons/Light/darkMode.png" alt="dark mode" id="darkMode" style="display: none;">
             </div>
             <nav>
+                <section class="headerOptions">
+                    <img src="Website/Images/Icons/Dark/home.png" alt="home" id="home">
                     <a href="index.html">home</a>
+                </section>
+                <section class="headerOptions">
+                    <img src="Website/Images/Icons/Dark/token.png" alt="token" id="token">
                     <a href="about_me.html">about me</a>
+                </section>
+                <section class="headerOptions">
+                    <img src="Website/Images/Icons/Dark/at.png" alt="at" id="at">
                     <a href="contact.html">contact</a>
+                </section>
+                <section class="headerOptions">
+                    <img src="Website/Images/Icons/Dark/frame.png" alt="frame" id="frame">
                     <a href="projects.html">projects</a>
+                </section>
             </nav>
         </div>
     </header>

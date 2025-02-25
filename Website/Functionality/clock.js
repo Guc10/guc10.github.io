@@ -1,4 +1,4 @@
-function startClock() {
+document.addEventListener('DOMContentLoaded', function() {
     const clockElement = document.getElementById('clock');
     setInterval(() => {
         const now = new Date();
@@ -10,6 +10,4 @@ function startClock() {
         }
         clockElement.textContent = now.toLocaleTimeString() + ':' + miliseconds;
     }, 1);
-}
-
-document.addEventListener('DOMContentLoaded', startClock);
+});
