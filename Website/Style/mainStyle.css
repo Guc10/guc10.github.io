@@ -30,6 +30,7 @@ header {
   width: 100vw;
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 header img {
   width: 25px;
@@ -96,6 +97,8 @@ header .headerContainer2 {
   width: 35vw;
   height: 400px;
   background-color: var(--primaryColor);
+  position: sticky;
+  top: 120px;
 }
 
 main {
