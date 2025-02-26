@@ -115,6 +115,8 @@ header
     height: 45px
 
 #menuContainer
+  display: flex
+  flex-wrap: wrap
   z-index: 4
   width: 550px
   height: 400px
@@ -138,6 +140,8 @@ footer
   height: 75px
   background-color: var(--primaryColor)
 
+  border-top: var(--fontColor) 1px solid
+
   display: flex
   justify-content: right
   align-items: center
@@ -146,3 +150,15 @@ footer
     width: 25px
     height: 25px
     margin: 0 25px 0 25px
+
+.menuLeft, .menuRight
+  width: 50%
+  height: 100%
+  padding: 10px
+  box-sizing: border-box
+
+.menuLeft
+  text-align: left
+
+.menuRight
+  text-align: right

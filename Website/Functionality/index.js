@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function toggleMenu() {
         if (menuItems.style.display === 'none') {
-            menuItems.style.display = 'block';
+            menuItems.style.display = 'flex';
         }else{
             menuItems.style.display = 'none';
         }
