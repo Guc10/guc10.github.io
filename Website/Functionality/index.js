@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleMode() {
         if (body.classList.contains('light-mode')) {
             body.classList.remove('light-mode');
-            lightModeImg.style.display = 'block';
+            lightModeImg.style.display = 'flex';
             darkModeImg.style.display = 'none';
-            icon1.setAttribute('src', 'Website/Images/Icons/Dark/menu.png');
+            icon1.children[0].setAttribute('src', 'Website/Images/Icons/Dark/menu.png');
             icon2.setAttribute('src', 'Website/Images/Icons/Dark/home.png');
             icon3.setAttribute('src', 'Website/Images/Icons/Dark/token.png');
             icon4.setAttribute('src', 'Website/Images/Icons/Dark/at.png');
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             body.classList.add('light-mode');
             lightModeImg.style.display = 'none';
-            darkModeImg.style.display = 'block';
-            icon1.setAttribute('src', 'Website/Images/Icons/Light/menu.png');
+            darkModeImg.style.display = 'flex';
+            icon1.children[0].setAttribute('src', 'Website/Images/Icons/Light/menu.png');
             icon2.setAttribute('src', 'Website/Images/Icons/Light/home.png');
             icon3.setAttribute('src', 'Website/Images/Icons/Light/token.png');
             icon4.setAttribute('src', 'Website/Images/Icons/Light/at.png');

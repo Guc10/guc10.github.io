@@ -1,12 +1,12 @@
 :root
-  --primaryColor: #000000
+  --primaryColor: #010409
   --fontColor: #E3E3E3
-  --mainColor: #E3E3E3
+  --mainColor: #151b23
   --secondaryColor: #FFD700
 
 body.light-mode
   --primaryColor: #E3E3E3
-  --fontColor: #000000
+  --fontColor: #151b23
   --mainColor: #428E58
   --secondaryColor: #428E58
 
@@ -34,10 +34,11 @@ header
   top: 0
   z-index: 3
 
+  border-bottom: var(--fontColor) 1px solid
+
   img
     width: 25px
     height: 25px
-    margin: 0 25px 0 25px
 
   h1
     font-size: 2rem
@@ -67,6 +68,17 @@ header
     width: 20%
     height: 100%
 
+    .menuClick
+      width: 45px
+      height: 45px
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 15px 0 15px
+
+      &:hover
+        border-bottom: var(--secondaryColor) 2px solid
+
   nav
     display: flex
     justify-content: right
@@ -93,6 +105,9 @@ header
         &:hover
           color: var(--secondaryColor)
 
+      &:hover
+        border-bottom: var(--secondaryColor) 2px solid
+
       img
         margin: 0 10px 0 0
 
@@ -100,12 +115,13 @@ header
     height: 45px
 
 #menuContainer
-  z-index: 2
-  width: 35vw
+  z-index: 4
+  width: 550px
   height: 400px
   background-color: var(--primaryColor)
+  border: var(--fontColor) 1px solid
 
-  position: sticky
+  position: fixed
   top: 120px
 
 main
