@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const icon4 = document.getElementById('at');
     const icon5 = document.getElementById('frame');
     const icon6 = document.getElementById('github');
+    const icon7 = document.getElementById('skill');
 
     const lightModeImg = document.getElementById('lightMode');
     const darkModeImg = document.getElementById('darkMode');
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icon4.setAttribute('src', 'Website/Images/Icons/Dark/at.png');
             icon5.setAttribute('src', 'Website/Images/Icons/Dark/frame.png');
             icon6.setAttribute('src', 'Website/Images/github-mark/github-mark-white.png');
+            icon7.setAttribute('src', 'Website/Images/Icons/Dark/star.png');
         } else {
             body.classList.add('light-mode');
             lightModeImg.style.display = 'none';
@@ -60,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icon4.setAttribute('src', 'Website/Images/Icons/Light/at.png');
             icon5.setAttribute('src', 'Website/Images/Icons/Light/frame.png');
             icon6.setAttribute('src', 'Website/Images/github-mark/github-mark.png');
+            icon7.setAttribute('src', 'Website/Images/Icons/Light/star.png');
         }
     }
 

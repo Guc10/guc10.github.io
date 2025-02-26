@@ -126,6 +126,10 @@ header
   position: fixed
   top: 120px
 
+  a
+    text-decoration: none
+    color: var(--fontColor)
+
 main
   z-index: 1
   width: 100vw
@@ -134,6 +138,13 @@ main
   width: 100%
   height: 2000px
   background-color: var(--mainColor)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  letter-spacing: 0.12em
+  line-height: 1.75em
 
 footer
   width: 100vw
@@ -152,15 +163,16 @@ footer
     margin: 0 25px 0 25px
 
 .menuLeft, .menuRight
-  width: 50%
   height: 100%
   padding: 10px
   box-sizing: border-box
 
 .menuLeft
+  width: 70%
   text-align: left
 
 .menuRight
+  width: 30%
   text-align: right
 
 td
@@ -174,3 +186,13 @@ td
 
 .pine
   border-left: var(--secondaryColor) 1px solid
+
+.content
+  width: 60%
+  height: 100%
+  text-align: justify
+  padding: 10px
+
+  h2
+    font-size: 1.5rem
+    margin: 50px 20px 20px 20px

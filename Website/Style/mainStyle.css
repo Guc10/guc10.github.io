@@ -3,6 +3,7 @@
   --fontColor: #E3E3E3;
   --mainColor: #151b23;
   --secondaryColor: #FFD700;
+  --headerHeight: 130px;
 }
 
 body.light-mode {
@@ -117,6 +118,10 @@ header .headerContainer2 {
   position: fixed;
   top: 120px;
 }
+#menuContainer a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
 
 main {
   z-index: 1;
@@ -127,6 +132,12 @@ main {
   width: 100%;
   height: 2000px;
   background-color: var(--mainColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.12em;
+  line-height: 1.75em;
 }
 
 footer {
@@ -145,17 +156,18 @@ footer img {
 }
 
 .menuLeft, .menuRight {
-  width: 50%;
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
 
 .menuLeft {
+  width: 70%;
   text-align: left;
 }
 
 .menuRight {
+  width: 30%;
   text-align: right;
 }
 
@@ -172,6 +184,25 @@ td {
 
 .pine {
   border-left: var(--secondaryColor) 1px solid;
+}
+
+.content {
+  width: 60%;
+  height: 100%;
+  text-align: justify;
+  padding: 10px;
+}
+.content h2 {
+  font-size: 1.5rem;
+  margin: 50px 20px 20px 20px;
+}
+
+a[href^="#aboutme"]::before {
+  content: "";
+  display: block;
+  height: var(--headerHeight);
+  margin-top: calc(-1 * var(--headerHeight));
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
