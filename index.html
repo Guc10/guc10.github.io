@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <!--style-->
-    <link rel="stylesheet" href="Website/Style/mainStyle.css">
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="Website/Style/mainStyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="Website/Style/mobileStyle.css">
     <link rel="icon" type="image/x-icon" href="Website/Images/Icons/Dark/favicon.png" >
 
     <!--ajax and functionality-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="Website/Functionality/clock.js"></script>
-    <script src="Website/Functionality/anim.js"></script>
+    <script src="Website/Functionality/sideMenu.js"></script>
 
     <title>About_me</title>
 </head>
@@ -29,7 +29,7 @@
         </div>
         <div class="headerContainer2">
             <div class="menu">
-                <img src="Website/Images/Icons/Dark/menu.png" alt="menu" id="menu">
+                <img src="Website/Images/Icons/Dark/menu.png" alt="menuButton" id="menuButton">
                 <img src="Website/Images/Icons/Dark/lightMode.png" alt="light mode" id="lightMode">
                 <img src="Website/Images/Icons/Light/darkMode.png" alt="dark mode" id="darkMode" style="display: none;">
             </div>
@@ -53,11 +53,16 @@
             </nav>
         </div>
     </header>
+    <div id="menuContainer" style="display: none;">
+        <div id="clock"></div>
+    </div>
     <main>
+        <aside class="mainContainer">
 
+        </aside>
     </main>
     <footer>
-
+        <a href="https://github.com/Guc10" target="_blank"><img src="Website/Images/github-mark/github-mark-white.png" alt="github" id="github"></a>
     </footer>
 </body>
 </html>

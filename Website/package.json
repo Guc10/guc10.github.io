@@ -4,7 +4,8 @@
   "description": "About me page",
   "main": "../index.html",
   "scripts": {
-    "sass": "sass Style/mainStyle.sass Style/mainStyle.css"
+    "sass": "sass Style/mainStyle.sass Style/mainStyle.css",
+    "sassMobile": "sass Style/mobileStyle.sass Style/mobileStyle.css"
   },
   "repository": {
     "type": "git",
