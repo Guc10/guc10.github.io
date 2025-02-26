@@ -29,9 +29,15 @@
         </div>
         <div class="headerContainer2">
             <div class="menu">
-                <img src="Website/Images/Icons/Dark/menu.png" alt="menuButton" id="menuButton">
-                <img src="Website/Images/Icons/Dark/lightMode.png" alt="light mode" id="lightMode">
-                <img src="Website/Images/Icons/Light/darkMode.png" alt="dark mode" id="darkMode" style="display: none;">
+                <div class="menuClick" id="menuButton">
+                    <img src="Website/Images/Icons/Dark/menu.png" alt="menuButton">
+                </div>
+                <div class="menuClick" id="lightMode">
+                    <img src="Website/Images/Icons/Dark/lightMode.png" alt="light mode">
+                </div>
+                <div class="menuClick" id="darkMode" style="display: none;">
+                    <img src="Website/Images/Icons/Light/darkMode.png" alt="dark mode">
+                </div>
             </div>
             <nav>
                 <section class="headerOptions">
@@ -54,7 +60,13 @@
         </div>
     </header>
     <div id="menuContainer" style="display: none;">
-        <div id="clock"></div>
+        <div class="menuLeft">
+
+        </div>
+        <div class="menuRight">
+            <p>time_</p>
+            <div id="clock"></div>
+        </div>
     </div>
     <main>
         <aside class="mainContainer">

@@ -1,13 +1,13 @@
 :root {
-  --primaryColor: #000000;
+  --primaryColor: #010409;
   --fontColor: #E3E3E3;
-  --mainColor: #E3E3E3;
+  --mainColor: #151b23;
   --secondaryColor: #FFD700;
 }
 
 body.light-mode {
   --primaryColor: #E3E3E3;
-  --fontColor: #000000;
+  --fontColor: #151b23;
   --mainColor: #428E58;
   --secondaryColor: #428E58;
 }
@@ -31,11 +31,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 3;
+  border-bottom: var(--fontColor) 1px solid;
 }
 header img {
   width: 25px;
   height: 25px;
-  margin: 0 25px 0 25px;
 }
 header h1 {
   font-size: 2rem;
@@ -61,6 +61,17 @@ header .menu {
   width: 20%;
   height: 100%;
 }
+header .menu .menuClick {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 0 15px;
+}
+header .menu .menuClick:hover {
+  border-bottom: var(--secondaryColor) 2px solid;
+}
 header nav {
   display: flex;
   justify-content: right;
@@ -85,6 +96,9 @@ header nav .headerOptions a {
 header nav .headerOptions a:hover {
   color: var(--secondaryColor);
 }
+header nav .headerOptions:hover {
+  border-bottom: var(--secondaryColor) 2px solid;
+}
 header nav .headerOptions img {
   margin: 0 10px 0 0;
 }
@@ -93,11 +107,14 @@ header .headerContainer2 {
 }
 
 #menuContainer {
-  z-index: 2;
-  width: 35vw;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 4;
+  width: 550px;
   height: 400px;
   background-color: var(--primaryColor);
-  position: sticky;
+  border: var(--fontColor) 1px solid;
+  position: fixed;
   top: 120px;
 }
 
@@ -116,6 +133,7 @@ footer {
   width: 100vw;
   height: 75px;
   background-color: var(--primaryColor);
+  border-top: var(--fontColor) 1px solid;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -124,6 +142,21 @@ footer img {
   width: 25px;
   height: 25px;
   margin: 0 25px 0 25px;
+}
+
+.menuLeft, .menuRight {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.menuLeft {
+  text-align: left;
+}
+
+.menuRight {
+  text-align: right;
 }
 
 /*# sourceMappingURL=mainStyle.css.map */
