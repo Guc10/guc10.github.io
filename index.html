@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <!--style-->
-    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="Website/Style/mainStyle.css">
-    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="Website/Style/mobileStyle.css">
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="Website/Style/mainStyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="Website/Style/mobileStyle.css">
     <link rel="icon" type="image/x-icon" href="Website/Images/Icons/Dark/favicon.png" >
 
     <!--ajax and functionality-->
@@ -141,8 +141,10 @@
             </table>
         </div>
         <div class="menuRight">
-            <p>time_</p>
-            <div id="clock"></div>
+            <div class="clockContainer">
+                <p>time_</p>
+                <div id="clock"></div>
+            </div>
         </div>
     </div>
     <main>
@@ -150,16 +152,33 @@
              <div class="content">
                 <h2 id="aboutme">about me_</h2>
                  <p>
-                     I am a young student from poland who constantly wants to improve myslef and my skills, my biggest dream is to create machines that fly, taking people to the skys. I love laying on the grass in the night,
-                     stargazing, and searching for my favourite stars and galaxies. I have my own teleskope which helps me with learning about those things that are beyound the ours eyes reach.
+                     I am a young student from poland who constantly wants to improve myself and my skills, my biggest dream is to create machines that fly, taking people to the skies. I love laying on the grass in the night,
+                     stargazing, and searching for my favourite stars and galaxies. I have my own telescope which helps me with learning about those things that are beyond ours eyes reach.
                      At the moment, I am focused on developing my programming skills—I absolutely love writing in C#. I work on Linux, which is a great environment for me because I enjoy using the console.
-                     In addition to programming, I work with 3D graphics, mostly using Blender. I also have some experience with game engines like UE5 and Unity. With frined of mines, we've created a small open-world game as part of a semester project.
-                     Those models that i've designed are also used for 3D printing my own parts, first using FDM printers and now focusing on SLA technology.
+                     In addition to programming, I work with 3D graphics, mostly using Blender. I also have some experience with game engines like UE5 and Unity. With friend of mines, we've created a small open-world game as part of a semester project.
+                     Those models that I've designed are also used for 3D printing my own parts, first using FDM printers and now focusing on SLA technology.
                  </p>
                  <h2 id="skills">skills_</h2>
-                 <h2 id="projects">projects_</h2>
-                 <h2 id="contact">contact_</h2>
              </div>
+        </aside>
+        <div class="project-container">
+            <div class="leftSwipe">
+                <h2>left</h2>
+                <img src="Website/Images/projects/img3.png" alt="project0">
+            </div>
+            <div class="project">
+                <h2 id="projects">projects_</h2>
+                <img src="Website/Images/projects/img1.png" alt="project1">
+            </div>
+            <div class="rightSwipe">
+                <h2>right</h2>
+                <img src="Website/Images/projects/img2.png" alt="project2">
+            </div>
+        </div>
+        <aside class="mainContainer">
+            <div class="content">
+                <h2 id="contact">contact_</h2>
+            </div>
         </aside>
     </main>
     <footer>
