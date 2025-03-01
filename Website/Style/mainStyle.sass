@@ -3,12 +3,16 @@
   --fontColor: #E3E3E3
   --mainColor: #151b23
   --secondaryColor: #FFD700
+  --buttonColor: #E3E3E3
+  --buttonColorHover: #FFD700
 
 body.light-mode
   --primaryColor: #E3E3E3
   --fontColor: #151b23
   --mainColor: #428E58
   --secondaryColor: #428E58
+  --buttonColor: #E3E3E3
+  --buttonColorHover: #8F4242
 
 body
   font-family: "Roboto Mono", serif
@@ -232,6 +236,7 @@ td
   flex-direction: column
   justify-content: space-around
 
+
   h1
     font-size: 2rem
 
@@ -239,17 +244,19 @@ td
     font-size: 1.5rem
     margin: 30px 20px 20px 30px
 
-  img
-    width: 150px
-    height: 350px
-    backdrop-filter: blur(5px)
-    background: rgba(255, 255, 255, 0.2)
-
 .leftSwipe
   align-items: start
 
+  img
+    object-fit: cover
+    object-position: right
+
 .rightSwipe
   align-items: end
+
+  img
+    object-fit: cover
+    object-position: left
 
 .project
   width: 700px
@@ -261,7 +268,8 @@ td
 
   img
     width: 700px
-    height: 350px
+    height: 394px
+    object-fit: cover
 
 .overlay
   width: 150px
@@ -270,14 +278,19 @@ td
   justify-content: center
   align-items: center
   position: relative
-  overflow: hidden
+
+  img
+    width: 150px
+    height: 394px
+    filter: blur(5px)
 
   h1
     font-size: 3.5rem
-    color: var(--primaryColor)
+    color: var(--buttonColor)
     z-index: 10
     position: absolute
     object-fit: cover
 
     &:hover
-      color: var(--secondaryColor)
+      color: var(--buttonColorHover)
+      cursor: pointer

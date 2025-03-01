@@ -68,4 +68,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
     darkModeImg.addEventListener('click', toggleMode);
     lightModeImg.addEventListener('click', toggleMode);
+
+    //projects swipe animations
+    const leftSwipe = document.getElementById('leftButton');
+    const rightSwipe = document.getElementById('rightButton');
+    const project1 = document.getElementById('leftProject');
+    const project2 = document.getElementById('middleProject');
+    const project3 = document.getElementById('rightProject');
+
+    const projects = [project1, project2, project3];
+
+    const imageSources = [
+        'Website/Images/projects/img1.png',
+        'Website/Images/projects/img2.png',
+        'Website/Images/projects/img3.png'
+    ];
+
+    leftSwipe.addEventListener('click', () => {
+        projects.forEach((project, index) => {
+            let currentSrc = project.getAttribute('src');
+            let currentIndex = imageSources.indexOf(currentSrc);
+            let newIndex = currentIndex - 1;
+            if (newIndex < 0) {
+                newIndex = imageSources.length - 1;
+            }
+            project.setAttribute('src', imageSources[newIndex]);
+        });
+    });
+
+    rightSwipe.addEventListener('click', () => {
+        projects.forEach((project, index) => {
+            let currentSrc = project.getAttribute('src');
+            let currentIndex = imageSources.indexOf(currentSrc);
+            let newIndex = currentIndex + 1;
+            if (newIndex >= imageSources.length) {
+                newIndex = 0;
+            }
+            project.setAttribute('src', imageSources[newIndex]);
+        });
+    });
 });
