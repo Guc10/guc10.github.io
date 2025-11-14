@@ -1,57 +1,9 @@
-# Hugo default ignore patterns
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
+*.test
+imports.*
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Editor files
-*.swp
-*.swo
-*~
-
-# IDE files
-.vscode/
+dist/
+public/
 .idea/
-*.tmproj
-*.sublime-project
-*.sublime-workspace
 
-# Hugo module files
-/.hugo_build.lock
-
-# Dependency directories
-/node_modules/
-/assets/bower_components/
-
-# Logs
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Hugo cache directory
-/.hugo_cache/
-
-# Temporary files
-*.tmp
-*.temp
-
-# Environment files
-.env
-.env.local
-.env.production
-
-# Hugo build output (already included above, but being explicit)
-/public/
+.DS_Store
+.hugo_build.lock
