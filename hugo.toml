@@ -1,0 +1,4 @@
+baseURL = 'https://guc10.github.io/'
+languageCode = 'en-us'
+title = 'about me_'
+theme = 'terminal'
