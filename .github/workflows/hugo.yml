@@ -1,13 +1,17 @@
 name: Build and deploy Hugo site
 
-on:
-  push:
-    branches:
-      - main
+on: 
+    push:
+        branches: [master]
 
 permissions:
+  contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -22,6 +26,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
+          extended: true
 
       - name: Cache Hugo resources
         uses: actions/cache@v4
@@ -29,19 +34,25 @@ jobs:
           path: |
             resources/_gen
             .hugo_cache
-          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.mod') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
 
       - name: Build site
         run: hugo --minify
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        id: deployment
+        uses: actions/deploy-pages@v4
