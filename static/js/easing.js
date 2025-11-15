@@ -15,11 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Per-element timing: make nick slower (longer duration),
     // make burning_ship and content faster (shorter duration + earlier start)
+    // Updated timings in `static/js/easing.js`
     const timings = {
-        nick: { start: 0.0, duration: 0.9 },          // hides slower (finishes later)
-        burning: { start: 0.05, duration: 0.35 },     // enters faster, slightly earlier
-        content: { start: 0.0, duration: 0.3 },       // enters fastest and from the start
+        nick: { start: 0.0, duration: 0.9 },          // hides slower (unchanged)
+        content: { start: 0.0, duration: 0.25 },     // finishes at 0.25 (fast)
+        burning: { start: 0.45, duration: 0.22 },    // starts after content ends, enters afterward
     };
+
 
     let needsUpdate = true;
     let sideOff = 0;

@@ -1,0 +1,14 @@
+@import "variables";
+
+article{
+  width: 100vw;
+  height: 76vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nick_name{
+    font-size: 3em;
+  }
+}
