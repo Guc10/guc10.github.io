@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
 
-    <title>{{ .Site.Title }}</title>
+    <title>{{ .Title }}</title>
 
     {{ $sass := resources.Get "sass/main.scss" }}
     {{ $style := $sass | css.Sass | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
-
+    <link rel="icon" type="image/x-icon" href="{{ .Params.heart }}">
 
 </head>
 <body>
@@ -16,7 +16,9 @@
 {{ partial "header.html" . }}
 
 <main>
+
     {{ block "main" . }}{{ end }}
+
 </main>
 
 {{ partial "footer.html" . }}

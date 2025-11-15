@@ -5,6 +5,8 @@ dist/
 public/
 .idea/
 resources/
+layouts/_default/taxonomy.html
+layouts/_default/terms.html
 
 .DS_Store
 .hugo_build.lock
