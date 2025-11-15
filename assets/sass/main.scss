@@ -20,14 +20,32 @@ body{
   }
 
   header{
-    height: 12vh;
+    height: 14vh;
     position: sticky;
     top: 0;
     left: 0;
 
 
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .right-header{
+    width: 275px;
+    height: 80%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+    align-items: center;
+
+    .rect{
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(80% 0, 100% 0, 20% 100%, 0 100%);
+      background-color: $color2;
+    }
   }
 
   footer{
@@ -67,7 +85,7 @@ body{
 
   main{
     width: 100vw;
-    height: 186vh;
+    height: 184vh;
 
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +93,7 @@ body{
 
   article{
     width: 100vw;
-    height: 74vh;
+    height: 72vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,18 +117,30 @@ body{
       width: 50%;
       height: 100%;
       background-color: $color5;
-      padding: $sub_padding;
       box-sizing: border-box;
     }
 
     .aside-left{
       clip-path: polygon(0 0, 70% 0%, 100% 25%, 100% 85%, 70% 100%, 0 100%, 0% 70%, 0 20%);
-      padding-top: 12vh;
+      padding: 12vh 20vh $sub_padding $sub_padding;
+    }
+
+    #content{
+      text-align: justify;
+      line-height: 1.7rem;
+      letter-spacing: 0.1rem;
     }
 
     .aside-right{
       clip-path: polygon(100% 0, 30% 0, 0 25%, 0 85%, 30% 100%, 100% 100%, 100% 70%, 100% 20%);
-      padding-top: 20rem;
+
+      #burning_ship{
+        width: 100%;
+        height: 25%;
+        object-fit: cover;
+        object-position: top right;
+        opacity: 0.92;
+      }
     }
   }
 }
