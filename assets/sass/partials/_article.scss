@@ -1,4 +1,5 @@
 @import "variables";
+@import "anim";
 
 article{
   width: 100vw;
@@ -17,7 +18,7 @@ article{
 
   .copy{
     width: 100%;
-    height: 5vh;
+    height: 18vh;
     padding: $base_padding $base_padding 20vh $base_padding;
     color: $color2;
 
@@ -28,10 +29,38 @@ article{
     justify-content: space-between;
     align-items: center;
 
-    .sides{
-      width: 10%;
+
+    .left-side, .right-side {
+      width: 40%;
       height: auto;
       text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .arrow-container{
+      width: 20%;
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: transform 0.15s ease;
+
+      &:hover{
+        animation: shake 0.3s ease;
+      }
+    }
+
+    .left-side{
+      align-items: start;
+    }
+
+    .right-side{
+      align-items: end;
     }
 
     .arrow{

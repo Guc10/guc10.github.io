@@ -2,11 +2,13 @@
     {{ partial "header.html" . }}
     <p class="nick_name" id="nick_name">guc10:~$</p>
     <div class="copy">
-        <div class="sides">
+        <div class="left-side">
             <img src="icons/star.svg" alt="search">
         </div>
-        <div class="arrow"></div>
-        <div class="sides">
+        <div class="arrow-container" id="arrow">
+            <div class="arrow"></div>
+        </div>
+        <div class="right-side">
             <span>&copy; guc10 : : {{ now.Year }}</span>
         </div>
     </div>
