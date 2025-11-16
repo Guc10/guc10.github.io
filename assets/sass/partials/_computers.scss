@@ -5,6 +5,8 @@
   height: auto;
   display: flex;
   flex-wrap: wrap;
+
+  margin-top: -18vh;
 }
 
 aside{
@@ -15,7 +17,7 @@ aside{
 }
 
 .aside-left{
-  clip-path: polygon(0 0, 70% 0%, 100% 15vh, 100% 85%, 70% 100%, 0 100%, 0% 70%, 0 20%);
+  clip-path: polygon(0 0, 70% 0%, 100% 14vh, 100% 85%, 70% 100%, 0 100%, 0% 70%, 0 20%);
   padding: 12vh $sub_padding 12vh $sub_padding;
 }
 
@@ -26,7 +28,7 @@ aside{
 }
 
 .aside-right{
-  clip-path: polygon(100% 0, 30% 0, 0 15vh, 0 85%, 30% 100%, 100% 100%, 100% 70%, 100% 20%);
+  clip-path: polygon(100% 0, 30% 0, 0 14vh, 0 85%, 30% 100%, 100% 100%, 100% 70%, 100% 20%);
 
   #burning_ship{
     width: 100%;
